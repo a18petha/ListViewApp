@@ -44,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
         my_listview.setAdapter(adapter);
         my_listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String[] boy = {"alps","Alphs","Alaska"};
-                Toast.makeText(getApplicationContext(), Arrays.toString(boy), Toast.LENGTH_LONG).show();
+            public void onItemClick(AdapterView<?> AdapterView, View view, int i, long l) {
+                Toast.makeText(getApplicationContext(), "Mountain "+mountainNames[i]+ ", Location "+mountainLocations[i]+ ", Mountain heights "+mountainHeights[i]+ " Meters", Toast.LENGTH_LONG).show();
             }
         });
 
